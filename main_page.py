@@ -32,7 +32,7 @@ if not os.path.isdir("/tmp/ta-lib"):
     os.system("make install")
     # install python package
     os.system(
-        'pip3 install --global-option=build_ext --global-option="-L/home/appuser/lib/" --global-option="-I/home/appuser/include/" ta-lib'
+        'pip3 install --global-option=build_ext --global-option="-L/home/appuser/lib/" --global-option="-I/home/appuser/include/" talib'
     )
     # back to the cwd
     os.chdir(default_cwd)
